@@ -11,21 +11,22 @@ int main(){
 
     int number1 = 999;
 
-    int *number1pointer;
+    int *number1pointer; // Default value if 0
 
     cout << number1 << endl;
     cout << number1pointer << endl;  // Default value
     cout << &number1pointer << endl;  // Address
     cout << &number1 << endl;
-    cout << *number1pointer << endl;
+    // cout << *number1pointer << endl;  // Null reference, not nice
+    // Security log example: segfault, denied resource overstep by requesting 4096 for RLIMIT_CORE against limit 0 ! 
 
     cout << endl << "----------------" << endl << endl;
 
-    number1pointer = &number1;  // Value of number1pointer as the address of number1
+    number1pointer = &number1;  // Null value of number1pointer to the address of number1
 
     cout << number1 << endl;  // As *number1pointer
     cout << number1pointer << "  !!!!" << endl;
-    cout << &number1pointer << endl;
+    cout << &number1pointer << endl;  // Stays at the same memory space !
     cout << &number1 << "  !!!!" << endl;
     cout << *number1pointer << endl; // As number1
 
