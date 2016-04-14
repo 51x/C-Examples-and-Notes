@@ -1,0 +1,5 @@
+Use constexpr to make sure the value of a variable does not change, neither the init type. Compile time evaluation of function calls.
+
+The use of const does not guarantee the init type - it's initialized at runtime. Slower.
+
+Good read: http://blog.smartbear.com/c-plus-plus/using-constexpr-to-improve-security-performance-and-encapsulation-in-c/
