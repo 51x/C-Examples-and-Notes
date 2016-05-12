@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
 
     int countagain = 1;
@@ -11,7 +9,7 @@ int main(){
             countagain++;
             continue;  //  Everything after continue is skipped and the loop finishes, continuing with the next loop.
         }
-        cout << countagain;
+        std::cout << countagain << "\n";
         countagain++;
     }
 

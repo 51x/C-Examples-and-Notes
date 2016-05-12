@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
 
     // Pointer is marked as *
@@ -12,22 +10,22 @@ int main(){
     int number1 = 999;
     int *number1pointer; // Default value, because not assigned, 0
 
-    cout << number1 << " <-- number1 "<< endl;
-    cout << number1pointer << " <-- number1pointer (default value)" << endl;
-    cout << &number1pointer << " <-- Memory address of the pointer number1pointer" << endl;
-    cout << &number1 << " <-- Memory address of number1" << endl ;
-    // cout << *number1pointer << endl;  // Null reference, not nice
+    std::cout << number1 << " <-- number1 "<< "\n";
+    std::cout << number1pointer << " <-- number1pointer (default value)" << "\n";
+    std::cout << &number1pointer << " <-- Memory address of the pointer number1pointer" << "\n";
+    std::cout << &number1 << " <-- Memory address of number1" << "\n" ;
+    // std::cout << *number1pointer << "\n";  // Null reference, not nice
     // Security log example: segfault, denied resource overstep by requesting 4096 for RLIMIT_CORE against limit 0 ! 
 
-    cout << endl << "----------------" << endl << endl;
+    std::cout << "\n" << "----------------" << "\n" << "\n";
 
     number1pointer = &number1;  // Null value of number1pointer to the address of number1
 
-    cout << number1 << " <-- number1 "<< endl;  // As *number1pointer
-    cout << number1pointer << " <-- !!!! number1pointer (now equals &number1)" << endl;
-    cout << &number1pointer << " <-- Memory address of the pointer number1pointer" << endl;  // Stays at the same memory space !
-    cout << &number1 << " <-- !!!! Memory address of number1" << endl;
-    cout << *number1pointer << " <-- *number1pointer" << endl; // As number1
+    std::cout << number1 << " <-- number1 "<< "\n";  // As *number1pointer
+    std::cout << number1pointer << " <-- !!!! number1pointer (now equals &number1)" << "\n";
+    std::cout << &number1pointer << " <-- Memory address of the pointer number1pointer" << "\n";  // Stays at the same memory space !
+    std::cout << &number1 << " <-- !!!! Memory address of number1" << "\n";
+    std::cout << *number1pointer << " <-- *number1pointer" << "\n"; // As number1
 
     return 0;
 }

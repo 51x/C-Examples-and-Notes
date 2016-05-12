@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
 
@@ -9,18 +7,18 @@ int main()
 
     if (numx <= 3)
     {
-        cout << "lowe" << endl;
+        std::cout << "lowe" << "\n";
     }
 
     else
     {
-        cout << "no lowe" << endl;
+        std::cout << "no lowe" << "\n";
     }
 
     if (numx >= 3)
-        cout << "lowe" << endl; // Only one line if no {} !
+        std::cout << "lowe" << "\n"; // Only one line if no {} !
     else
-        cout << "no lowe" << endl;
+        std::cout << "no lowe" << "\n";
 
 
 

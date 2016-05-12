@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
 
@@ -9,11 +7,11 @@ int main()
     int b=6;
 
     /* First value, then arithmetic! */
-    cout << a-- << "a--" << endl;
-    cout << a << "a" <<endl;
+    std::cout << a-- << "a--" << "\n";
+    std::cout << a << "a" <<"\n";
 
-    cout << b++ << "b++" << endl;
-    cout << b << "b" << endl;
+    std::cout << b++ << "b++" << "\n";
+    std::cout << b << "b" << "\n";
 
     return 0;
 

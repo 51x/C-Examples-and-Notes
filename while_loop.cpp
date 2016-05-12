@@ -1,15 +1,13 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     int counter = 1 ;
 
     while ( counter <= 10){
-        cout << "Woooo" << endl;
+        std::cout << "Woooo" << "\n";
         counter++;
-        cout << counter;
+        std::cout << counter;
     }
 
     return 0;

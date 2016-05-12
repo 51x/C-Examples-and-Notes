@@ -1,11 +1,10 @@
 #include <iostream>
-using namespace std;
 
 int main(){
     int *pointer;
     pointer = new int; // Allocate memory
     *pointer = 9;
-    cout << *pointer << endl;
+    std::cout << *pointer << "\n";
     delete pointer;  // Free up memory - deallocate
-    cout << sizeof(pointer) << endl; // Size of pointer!
+    std::cout << sizeof(pointer) << "\n"; // Size of pointer!
 }

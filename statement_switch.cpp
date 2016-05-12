@@ -1,46 +1,44 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
 
     // Example 1
     int userinput;
-    cout << "1 or 2 or 3 ?" << endl;
-    cin >> userinput;
+    std::cout << "1 or 2 or 3 ?" << "\n";
+    std::cin >> userinput;
     switch( userinput ){
         case 1 : {
-            cout << "case no.1" << endl;
+            std::cout << "case no.1" << "\n";
             break;
         }
         case 2 : {
-            cout << "case no.2" << endl;
+            std::cout << "case no.2" << "\n";
             break;
         }
         case 3 : {
-            cout << "case no.3" << endl;
+            std::cout << "case no.3" << "\n";
             break;
         }
         default : {
-            cout << "de' fault." << endl;  // Break is not needed for default
+            std::cout << "de' fault." << "\n";  // Break is not needed for default
         }
     }
 
     // Example 2
     char userinput2;
-    cout << "a or b or c ?" << endl;
-    cin >> userinput2;
+    std::cout << "a or b or c ?" << "\n";
+    std::cin >> userinput2;
     switch( userinput2 ){
         case 'a' : {
-            cout << "case no.1" << endl;
+            std::cout << "case no.1" << "\n";
             break;
         }
         case 'b' : {
-            cout << "case no.2" << endl;
+            std::cout << "case no.2" << "\n";
             break;
         }
         case 'c' : {
-            cout << "case no.3" << endl;
+            std::cout << "case no.3" << "\n";
             break;
         }
     }

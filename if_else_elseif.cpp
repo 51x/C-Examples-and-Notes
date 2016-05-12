@@ -1,26 +1,24 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     int numx=22;
 
     if (numx <= 10) {
-        cout << "such wow" << endl;
+        std::cout << "such wow" << "\n";
     }
     else if (numx <= 25){
-        cout << "very number" << endl;
+        std::cout << "very number" << "\n";
     }
     else
-        cout << "QQ" << endl;
+        std::cout << "QQ" << "\n";
 
 
     bool vari=true;
     if(!vari)
-        cout << "no true";
+        std::cout << "no true" << "\n";
     else
-        cout << "so true";
+        std::cout << "so true" << "\n";
 
     return 0;
 }

@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     // multidimensional, meaning 'two lines'
@@ -11,9 +9,8 @@ int main()
     {4,1,4,4,6,5}
     };
 
-    cout << marks[0][0] << endl; // First student, first mark
-    cout << marks[1][1] << endl; // Second student, second mark
-
+    std::cout << marks[0][0] << "\n"; // First student, first mark
+    std::cout << marks[1][2] << "\n"; // Second student, second mark
 
     return 0;
 }

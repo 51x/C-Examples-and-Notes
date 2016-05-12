@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
 
@@ -9,19 +7,19 @@ int main()
 
     int numx = 9, numy = 4;
 
-    cout << numx % numy << endl;
+    std::cout << numx % numy << "\n";
 
     numx += numy; // same as  numx = numx + numy;
-    cout << numx << endl;
+    std::cout << numx << "\n";
 
     numx %= numy;
-    cout << numx << endl;
+    std::cout << numx << "\n";
 
     numx *= numy;
-    cout << numx << endl;
+    std::cout << numx << "\n";
 
     numx /= numy;
-    cout << numx << endl;
+    std::cout << numx << "\n";
 
 
 

@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct thestruct{
     // Members of structure is id and sex.
@@ -18,7 +17,7 @@ int main(){
     mary.sex = 'f';
     joe.sex = 'm';
 
-    cout << alice.id << endl << mary.sex << endl;
+    std::cout << alice.id << "\n" << mary.sex << "\n";
 
     return 0;
 

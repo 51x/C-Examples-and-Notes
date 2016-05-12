@@ -1,17 +1,16 @@
 #include <iostream>
-using namespace std;
 
 /* Incorrect, making segfault and RLIMIT_CORE against limit 0 
 int main(){
 
     int *pointer;
 
-    cout << "Pointer value is: " << *pointer ;
+    std::cout << "Pointer value is: " << *pointer ;
 
     *pointer = 1; // Null address set to 1 - not good.
 
     if (pointer != NULL) {
-        cout << *pointer << " - Pointer, oops...";
+        std::cout << *pointer << " - Pointer, oops...";
     }
 
     return 0;
@@ -26,10 +25,10 @@ int main(){
     int *pointer;
     pointer = &a;
 
-    cout << "Pointer value is: " << *pointer ;
+    std::cout << "Pointer value is: " << *pointer << "\n";
 
     if (pointer != NULL) {
-        cout << " - Pointer ok.";
+        std::cout << " - Pointer ok." << "\n";
     }
     return 0;
 }

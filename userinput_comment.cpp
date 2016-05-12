@@ -1,16 +1,14 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     int xnum=7;
     int uinput;
-    cin >> uinput ;
-    cout << uinput << endl;  //comment example
+    std::cin >> uinput ;
+    std::cout << uinput << "\n";  //comment example
     /* comment example */
-    cout << "print using cout "  << xnum << endl;
-    /* comment example - cout << "print using cout" << endl << numx << endl; */
+    std::cout << "print using std::cout "  << xnum << "\n";
+    /* comment example - std::cout << "print using std::cout" << "\n" << numx << "\n"; */
 
     return 0;
 

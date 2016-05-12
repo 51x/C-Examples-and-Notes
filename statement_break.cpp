@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
 
     int counting;
@@ -9,7 +7,7 @@ int main(){
     for (counting = 5; counting <= 9; counting++){
         int countinside;
         for(countinside = 4; countinside <=7; countinside++){
-            cout << countinside << endl;
+            std::cout << countinside << "\n";
             if (countinside == 6)
                 break;
         }
